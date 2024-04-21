@@ -114,9 +114,9 @@ void quick_sort(int *array, size_t size)
 		return;
 
 	/* Declare variables for the low and high indices */
-	low = 0;
-	high = size - 1;
+	int llow = 0;
+	int hhigh = size - 1;
 
 	/* Call the helper function to sort the array */
-	quick_sort_helper(array, low, high, size);
+	quick_sort_helper(array, llow, hhigh, size);
 }
