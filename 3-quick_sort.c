@@ -113,10 +113,6 @@ void quick_sort(int *array, size_t size)
 	if (!array || size < 2)
 		return;
 
-	/* Declare variables for the low and high indices */
-	int llow = 0;
-	int hhigh = size - 1;
-
 	/* Call the helper function to sort the array */
-	quick_sort_helper(array, llow, hhigh, size);
+	quick_sort_helper(array, 0, size - 1, size);
 }
