@@ -37,15 +37,14 @@ void bubble_sort(int *array, size_t size)
 		return;
 
 	/* Repeat until no more swaps are made */
-	do
-	{
+	do {
 		/* Reset swapped flag */
 		swapped = 0;
 
 		/* Loop through array */
 		for (i = 0; i < size - 1; i++)
 		{
-			/* If current element is less than or equal to next one, continue to next iteration */
+			/* If current element i */
 			if (array[i] <= array[i + 1])
 				continue;
 
